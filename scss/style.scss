@@ -1,0 +1,42 @@
+@font-face {
+  font-family: digital-7;
+  src: url("../fonts/digital-7/digital-7.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #111;
+}
+.main {
+  margin-top: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  .main__section {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    p {
+      color: #ff0000;
+      font-size: 100px;
+    }
+    h1 {
+      font-family: digital-7;
+      font-size: 200px;
+      color: #ff0000;
+      text-shadow: 0px 0px 25px #ff0000;
+    }
+    .the__date {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        font-size: 43px;
+      }
+    }
+  }
+}
