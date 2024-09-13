@@ -4,12 +4,13 @@ function hour() {
   let hour = data.getHours().toString().padStart(2, "0");
   let minutes = data.getMinutes().toString().padStart(2, "0");
   let seconds = data.getSeconds().toString().padStart(2, "0");
-  time.innerHTML = `${hour}:${minutes}:${seconds}`;
+  let milliySeconds = data.getMilliseconds();
+  time.innerHTML = `${hour}:${minutes}:${seconds}:${milliySeconds}`;
 }
 hour();
 setInterval(() => {
   hour();
-}, 1000);
+}, 100);
 
 const displayedDay = document.querySelector(".day");
 function kun() {
@@ -30,7 +31,7 @@ hafta();
 const displayedMonths = document.querySelector(".months");
 function oy() {
   let data = new Date();
-  let months = data.getMonth();
+  let months = data.getMonth() + 1;
   displayedMonths.innerHTML = `${months}`;
 }
 oy();
@@ -42,6 +43,7 @@ function yil() {
   displayedYear.innerHTML = `${year}`;
 }
 yil();
+
 // ----------------------------------------------
 // ----------------------------------------------
 // ----------------------------------------------

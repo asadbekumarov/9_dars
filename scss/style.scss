@@ -17,9 +17,10 @@ body {
   align-items: center;
   justify-content: start;
   .main__section {
-    width: 600px;
+    width: 850px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     p {
       color: #ff0000;
       font-size: 100px;
@@ -33,9 +34,9 @@ body {
     .the__date {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       p {
-        font-size: 43px;
+        font-size: 60px;
       }
     }
   }
